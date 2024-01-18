@@ -18,10 +18,20 @@ While building with Llama 2, this repository is intended to leverage its factual
 - **Streamlit**: Build a user-friendly interface using Streamlit, allowing users to interact seamlessly with the chatbot. No front-end experience required. It's the UI powering Large Language Model movement. That means GenAI and Streamlit: A perfect match.
 
 ## Requirements
-1. It's always a best practice to create a virtual environment for your own project. Please make sure that you already have Python with a version above 3.8.x in order to get along with this. Create and go to directory which has been provided for this project.
-
-  ```
-  python -m venv llm_env 
-  ```
-
-2. After the virtual environment is done created, activate it.
+1. It's always a best practice to create a virtual environment for your project to manage dependencies. Please make sure that you already have Python installed, preferably version above 3.8.x or higher in order to get along with this. Create and go to directory that you have provided for this project run this command.
+```bash
+python -m venv llm_env 
+```
+2. Go activate the virtual environment after it's done created.
+  - On Windows:
+    ```bash
+    llm_env\Scripts\activate
+    ```
+  - On Unix or MacOS:
+    ```bash
+    source llm_env\bin\activate
+    ```
+3. Go to directory where `requirements.txt` is located. Then, install all dependencies included by running this command.
+   ```bash
+   pip install -r requirements.txt
+   ```
