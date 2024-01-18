@@ -56,6 +56,7 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
 
 ????
---Set up .env file to connect to Pinecone
---Set up vector store on Pinecone
---Download Llama 2 Model
+- Set up .env file to connect to Pinecone
+- Set up vector store on Pinecone
+- Download Llama 2 Model
+- Change the number of context to 1024
