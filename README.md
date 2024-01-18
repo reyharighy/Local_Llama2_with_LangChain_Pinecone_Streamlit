@@ -40,15 +40,16 @@ To set up the project, follow these steps:
     ```
 
 3. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
+
    Libraries:
-   
+   ![Pandas License](https://img.shields.io/badge/pandas-1.4.2-lightgrey)<br>
 
    ```bash
    pip install -r requirements.txt
    ```
 
 5. zzzzz
-    ![Pandas License](https://img.shields.io/badge/pandas-1.4.2-lightgrey)  
+    
     ![Pandas License](https://img.shields.io/badge/numpy-1.23.2-yellow)
     ![Pandas License](https://img.shields.io/badge/seaborn-0.11.2-blue)
     ![Pandas License](https://img.shields.io/badge/matplotlib-3.5.1-red)<br>
