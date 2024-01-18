@@ -23,6 +23,8 @@ While building with Llama 2, this repository is intended to leverage its factual
     ```bash
     python -m venv llm_env 
     ```
+
+    I give the name of this virtual environment as `llm_env` which you can decide to give it arbitrarily.
     
 2. Go activate the virtual environment after it's done created.
   - On Windows:
