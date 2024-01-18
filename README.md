@@ -47,7 +47,4 @@ To set up the project, follow these steps:
 
    Libraries:<br>
    
-    ![](https://img.shields.io/badge/pandas-1.4.2-lightgrey)<br>
-    ![](https://img.shields.io/badge/numpy-1.23.2-yellow)<br>
-    ![](https://img.shields.io/badge/seaborn-0.11.2-blue)<br>
-    ![](https://img.shields.io/badge/matplotlib-3.5.1-red)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/streamlit?style=for-the-badge&label=Streamlit&color=%236666ff)<br>
