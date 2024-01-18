@@ -18,27 +18,28 @@ While building with Llama 2, this repository is intended to leverage its factual
 - **Streamlit**: Build a user-friendly interface using Streamlit, allowing users to interact seamlessly with the chatbot. No front-end experience required. It's the UI powering Large Language Model movement. That means GenAI and Streamlit: A perfect match.
 
 ## Requirements
-1. Create a specified directory for the purpose of this project.
-2. It's always a best practice to create a virtual environment for your project to manage dependencies which you can decide to give the name arbitrarily. I personally name it `llm_env` in my project. Please make sure that you already have Python installed, preferably with a version above 3.8.x or higher in order to get along with this. Go to the directory that you have provided for this project and run this command.
+To set up the project, follow these steps:
+1. Create a dedicated directory for the purpose of this project using your preferred file manager or command-line interface.
+2. It's always a best practice to create a virtual environment to manage dependencies for your project which you can decide to give the name arbitrarily. I personally name it `llm_env` in my project. Please make sure that you already have Python installed, preferably with a version above 3.8.x or higher in order to get along with this. Open the terminal and navigate to the project directory you have provided. Run this command to create a virtual environment.
 
     ```bash
     python -m venv llm_env 
     ```
 
-2. Go activate the virtual environment after it's done created.
-  - On Windows:
+2. Activate the virtual environment after it's done created.
+    - On Windows:
 
     ```bash
     llm_env\Scripts\activate
     ```
 
-  - On Unix or MacOS:
+    - On Unix or MacOS:
 
     ```bash
     source llm_env\bin\activate
     ```
 
-3. Download `requirements.txt` file that I provided in this repository and go find the directory where the file is located. Then, install all dependencies included by running this command.
+3. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
 
    ```bash
    pip install -r requirements.txt
