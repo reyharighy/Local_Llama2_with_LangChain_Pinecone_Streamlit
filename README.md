@@ -41,7 +41,7 @@ To set up the project, follow these steps:
 
 3. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
 
-   Libraries:
+   Libraries:<br>
    ![Pandas License](https://img.shields.io/badge/pandas-1.4.2-lightgrey)<br>
 
    ```bash
