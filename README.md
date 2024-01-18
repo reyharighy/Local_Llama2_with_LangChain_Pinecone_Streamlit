@@ -20,8 +20,8 @@ While building with Llama 2, this repository is intended to leverage its factual
 ## Requirements
 1. It's always a best practice to create a virtual environment for your own project. Please make sure that you already have Python with a version above 3.8.x in order to get along with this. Create and go to directory which has been provided for this project.
 
-```
-python -m venv llm_env 
-```
+  ```
+  python -m venv llm_env 
+  ```
 
 2. After the virtual environment is done created, activate it.
