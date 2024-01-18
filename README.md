@@ -52,3 +52,10 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/easygoogletranslate?style=for-the-badge&label=easygoogletranslate&color=%23ffcc00)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/pinecone-client?style=for-the-badge&label=pinecone-client&color=%2333cc33)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/python-dotenv?style=for-the-badge&label=python-dotenv&color=%23ff66cc)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/sentence-transformers?style=for-the-badge&label=sentence-transformers&color=%2333cccc)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
+
+????
+--Set up .env file to connect to Pinecone
+--Set up vector store on Pinecone
+--Download Llama 2 Model
