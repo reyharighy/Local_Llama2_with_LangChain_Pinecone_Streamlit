@@ -37,8 +37,10 @@ While building with Llama 2, this repository is intended to leverage its factual
     source llm_env\bin\activate
     ```
     
-3. Go to directory where `requirements.txt` is located. Then, install all dependencies included by running this command.
+3. Download `requirements.txt` file that I provided in this repository and go find the directory where the file is located. Then, install all dependencies included by running this command.
 
    ```bash
    pip install -r requirements.txt
    ```
+
+4. 
