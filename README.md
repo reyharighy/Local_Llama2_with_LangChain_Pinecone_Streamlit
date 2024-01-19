@@ -89,4 +89,24 @@ The prompt template for the first turn looks like this:
 This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
 
 ## Knowledge Base Improvement
+As the objectives outlined in introduction section, this repository tries to leverage the Llama 2 model's accuracy when providing answer to the context outside its training data. By this, we integrate Llama 2 model with Pinecone as an index database to store unknown information. This repository has included such trending and hot topic about Indonesia's 2024 election that's absolutely out of Llama 2's knowledge. This information is reliable and has no tendency about political choices because this repository is merely for research purpose. The information has been curated and can be seen as below.
 
+```markdown
+Registration stages for presidential and vice-presidential candidates for 2024 Indonesia’s general election 
+ended on October 25th, 2023. The general election will be held simultaneously throughout Indonesia on 
+February 14th, 2024. There are three pairs of presidential and vice-presidential candidates having 
+registered with Komisi Pemilihan Umum (KPU). Here’s the list of candidate pairs:\n
+\t- Candidate pair number 1 are Anies Rasyid Baswedan as presidential candidate and Abdul 
+Muhaimin Iskandar as vice-presidential candidate. They were promoted by Partai Nasional 
+Demokrat (Nasdem), Partai Kebangkitan Bangsa (PKB), and Partai Keadilan Sejahtera (PKS). They
+registered with KPU on October 19th, 2023.
+\t- Candidate pair number 2 are Prabowo Subianto as presidential candidate and Gibran 
+Rakabuming Raka as vice-presidential candidate. They were promoted by Partai Gerakan 
+Indonesia Raya (Gerindra), Partai Golongan Karya (Golkar), Partai Demokrat (Demokrat), Partai 
+Amanat Nasional (PAN), Partai Solidaritas Indonesia (PSI), Partai Gelombang Rakyat Indonesia 
+(Gelora), Partai Bulan Bintang (PBB), Partai Rakyat Adil Makmur (Prima), and Partai Garda 
+Perubahan Indonesia (Garuda). They registered with KPU on October 19th, 2023.
+\t- Candidates number 3 are Ganjar Pranowo as presidential candidate and Mahfud MD as vicepresidential candidate. They were promoted by Partai Demokrasi Indonesia Perjuangan (PDIP), 
+Partai Persatuan Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati 
+Nurani Rakyat (Hanura). They registered with KPU on October 25th, 2023
+```
