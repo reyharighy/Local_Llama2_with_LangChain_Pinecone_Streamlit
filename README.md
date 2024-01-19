@@ -7,6 +7,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Knowledge Base Improvement](#knowledge_base_improvement)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
@@ -87,9 +88,5 @@ The prompt template for the first turn looks like this:
 
 This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
 
+## Knowledge Base Improvement
 
----????---
-- Change the number of context to 1024
-- Prepare the external data as knowledge base
-- Set up .env file to connect to Pinecone
-- Set up vector store on Pinecone using sentence transformers
