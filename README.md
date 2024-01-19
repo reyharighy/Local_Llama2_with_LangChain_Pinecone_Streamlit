@@ -10,7 +10,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Knowledge Base Improvement](#knowledge-base-improvement)
 
 ## Introduction
-This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
+This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of the Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
 
 While building with Llama 2, this repository is intended to leverage its factual accuracy and consistency by providing it with reliable and up-to-date information from the knowledge base. Achieving this involves the model with an external database that could be used to store such novel information. In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope. 
 
@@ -59,8 +59,8 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/gguf?style=for-the-badge&label=gguf&color=%23ffacde)<br>
 
 ## Installation
-Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). As our foundatinal model that runs locally, `llama-2-7b-chat.gguf.q2_K` will be the option so we can query to it with secure and cost-free chat conversations. You need to follow these steps:
-1. Download one of GGML version model of Llama 2 on [Hugging Face Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main).
+Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). In order to install the Llama 2 model, you need to follow these steps:
+1. Download one of GGML version model of Llama 2 on [Hugging Face Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main). We choose `llama-2-7b-chat.gguf.q2_K` version as our foundational model that runs locally.
 
     Note:
     GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers. This makes GGML an ideal starting point for most local machines, particularly those not equipped with GPUs for machine learning or with limited RAM.
@@ -74,7 +74,7 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
    ```
 
 ## Usage
-As of introduction section clearly informed previously, the chatbot application should behave as if it's an assistant that intelligently and interactively reply to whatever query we apply. This is essential to specify the behaviour of the assistant because of the unsung advantages of Llama 2 as open-access models. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
+As of introduction section clearly informed previously, the chatbot application should behave as if it's an assistant that intelligently and interactively reply to whatever query we apply. This is essential to specify the behaviour of the assistant because of the unsung advantages of the Llama 2 as open-access models. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
 
 The prompt template for the first turn looks like this:
 
@@ -86,7 +86,7 @@ The prompt template for the first turn looks like this:
 {{ user_message }} [/INST]
 ```
 
-This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
+This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of the Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
 
 ## Knowledge Base Improvement
 As outlined in the introduction section, the primary objective of this repository is to enhance the accuracy of the Llama 2 model when providing answers to questions related to contexts outside its training data. To achieve this, we integrate the Llama 2 model with Pinecone, serving as an index database to store additional information that may not be present in Llama 2's knowledge base.
