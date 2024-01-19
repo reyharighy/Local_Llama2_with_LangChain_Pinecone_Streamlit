@@ -65,8 +65,11 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
 2. After the selected model been downloaded, we need to convert the GGML version into GGUF as it proposed on this [discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This is a breaking change to model files that works with `llama.cpp`. Carefully use `convert-llama-ggml-to-gguf.py` file to accomplish this step on command-line interface.
 
    ```bash
-   python ./convert-llama-ggmlv3-to-gguf.py --eps 1e-5 --input models/openorca-platypus2-13b.ggmlv3.q4_0.bin --output models/openorca-platypus2-13b.gguf.q4_0.bin
+   python convert-llama-ggml-to-gguf.py --eps 1e-5 --input llama-2-7b-chat.ggmlv3.q2_K.bin --output llama-2-7b-chat.gguf.q2_K.bin
    ```
+
+3. aaa
+
 
 ---????---
 - Download Llama 2 model to run locally
