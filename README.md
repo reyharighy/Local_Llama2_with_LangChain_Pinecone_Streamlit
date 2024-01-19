@@ -99,16 +99,19 @@ Registration stages for presidential and vice-presidential candidates for 2024 I
 ended on October 25th, 2023. The general election will be held simultaneously throughout Indonesia on
 February 14th, 2024. There are three pairs of presidential and vice-presidential candidates having
 registered with Komisi Pemilihan Umum (KPU). Here’s the list of candidate pairs:
+
 Candidate pair number 1 are Anies Rasyid Baswedan as presidential candidate and Abdul Muhaimin
 Iskandar as vice presidential candidate. They were promoted by Partai Nasional Demokrat (Nasdem),
 Partai Kebangkitan Bangsa (PKB), and Partai Keadilan Sejahtera (PKS). They registered with KPU on
 October 19th, 2023.
+
 Candidate pair number 2 are Prabowo Subianto as presidential candidate and Gibran Rakabuming Raka
 as vice presidential candidate. They were promoted by Partai Gerakan Indonesia Raya (Gerindra), Partai
 Golongan Karya (Golkar), Partai Demokrat (Demokrat), Partai Amanat Nasional (PAN), Partai Solidaritas 
 Indonesia (PSI), Partai Gelombang Rakyat Indonesia (Gelora), Partai Bulan Bintang (PBB), Partai Rakyat
 Adil Makmur (Prima), and Partai Garda Perubahan Indonesia (Garuda). They registered with KPU on
 October 19th, 2023.
+
 Candidates number 3 are Ganjar Pranowo as presidential candidate and Mahfud MD as vice presidential
 candidate. They were promoted by Partai Demokrasi Indonesia Perjuangan (PDIP), Partai Persatuan
 Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani Rakyat (Hanura). They
