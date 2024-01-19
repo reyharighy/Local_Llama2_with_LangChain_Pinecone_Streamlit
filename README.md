@@ -49,8 +49,9 @@ To set up the project, follow these steps:
 
    Libraries:
    
-    ![PyPI - Version](https://img.shields.io/pypi/v/streamlit?style=for-the-badge&label=Streamlit&color=%236666ff)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/unstructured%20%5Ball-docs%5D?style=for-the-badge&label=unstructured%20%5Ball-docs%5D&color=%23ffffff)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/langchain?style=for-the-badge&label=langchain&color=%23ff3300)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/streamlit?style=for-the-badge&label=Streamlit&color=%236666ff)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/easygoogletranslate?style=for-the-badge&label=easygoogletranslate&color=%23ffcc00)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/pinecone-client?style=for-the-badge&label=pinecone-client&color=%2333cc33)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/python-dotenv?style=for-the-badge&label=python-dotenv&color=%23ff66cc)<br>
@@ -100,3 +101,4 @@ Registration stages for presidential and vice-presidential candidates for 2024 I
     - Candidates number 3 are Ganjar Pranowo as presidential candidate and Mahfud MD as vicepresidential candidate. They were promoted by Partai Demokrasi Indonesia Perjuangan (PDIP), Partai Persatuan Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani Rakyat (Hanura). They registered with KPU on October 25th, 2023.
 ```
 
+The additional information that would be stored on Pinecone should be processed into chunks using some libraries. This specific step is included on 
