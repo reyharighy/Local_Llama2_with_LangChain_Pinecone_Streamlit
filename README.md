@@ -26,7 +26,7 @@ To set up the project, follow these steps:
     python -m venv llm_env 
     ```
 
-2. Activate the virtual environment after it's done created.
+3. Activate the virtual environment after it's done created.
     - On Windows:
 
     ```bash
@@ -39,7 +39,7 @@ To set up the project, follow these steps:
     source llm_env\bin\activate
     ```
 
-3. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
+4. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
 
    ```bash
    pip install -r requirements.txt
@@ -56,7 +56,10 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
 
 ## Installation
-
+Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). As our foundatinal model that runs locally, `llama-2-7b-chat.gguf.q2_K` will be the option so we can query to it with secure and cost-free chat conversations. You need to follow these steps:
+1. Fill out the access request form on this [link](https://ai.meta.com/resources/models-and-libraries/llama-downloads/). Please make sure to use the same email address associated with your Hugging Face account, as the model would be downloaded from there.
+2. Once you received confirmation of access, head to Hugging Face [repository models](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main).
+3. 
 
 
 ---????---
