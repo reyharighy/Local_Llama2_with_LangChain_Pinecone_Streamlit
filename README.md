@@ -58,9 +58,9 @@ To set up the project, follow these steps:
 ## Installation
 Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). As our foundatinal model that runs locally, `llama-2-7b-chat.gguf.q2_K` will be the option so we can query to it with secure and cost-free chat conversations. You need to follow these steps:
 1. Download one of GGML version model of Llama 2 on [Hugging Face Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main).
-   Note:
-   GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers.   
 
+    Note:
+    GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers.
 
 ---????---
 - Download Llama 2 model to run locally
