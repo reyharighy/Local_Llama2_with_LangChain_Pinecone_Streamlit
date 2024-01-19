@@ -63,7 +63,7 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
     Note:
     GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers. This makes GGML an ideal starting point for most local machines, particularly those not equipped with GPUs for machine learning or with limited RAM.
 
-2. Once you have downloaded the selected Llama 2 model in the GGML version, it needs to be converted to GGUF, as proposed in [this discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This conversion is considered a breaking change to model files that work with `llama.cpp`. Download `convert-llama-ggml-to-gguf.py` file provided in this repository.
+2. Once downloaded, the GGML version needs to be converted to GGUF, as proposed in [this discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This conversion is considered a breaking change to model files that work with `llama.cpp`. Download `convert-llama-ggml-to-gguf.py` file provided in this repository.
 3. Move the `convert-llama-ggml-to-gguf.py` script directly to the directory where the GGML version is located.
 4. Run this command on command-line interface.
 
