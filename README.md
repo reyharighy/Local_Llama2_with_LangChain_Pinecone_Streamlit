@@ -50,7 +50,7 @@ To set up the project, follow these steps:
    Libraries:
    
     ![PyPI - Version](https://img.shields.io/pypi/v/unstructured%20%5Ball-docs%5D?style=for-the-badge&label=unstructured%20%5Ball-docs%5D&color=%23ffffff)<br>
-    ![PyPI - Version](https://img.shields.io/pypi/v/langchain?style=for-the-badge&label=langchain&color=%23ff9933&link=https%3A%2F%2Fpypi.org%2Fproject%2Flangchain%2F)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/langchain?style=for-the-badge&label=langchain&color=%23ff9933)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/streamlit?style=for-the-badge&label=Streamlit&color=%236666ff)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/easygoogletranslate?style=for-the-badge&label=easygoogletranslate&color=%23ffcc00)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/pinecone-client?style=for-the-badge&label=pinecone-client&color=%2333cc33)<br>
