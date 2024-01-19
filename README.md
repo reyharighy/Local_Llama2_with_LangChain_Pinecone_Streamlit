@@ -6,6 +6,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Usage](#usage)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
@@ -71,11 +72,11 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
    python convert-llama-ggml-to-gguf.py --eps 1e-5 --input llama-2-7b-chat.ggmlv3.q2_K.bin --output llama-2-7b-chat.gguf.q2_K.bin
    ```
 
-5. aaa
+## Usage
+
 
 
 ---????---
-- Download Llama 2 model to run locally
 - Change the number of context to 1024
 - Prepare the external data as knowledge base
 - Set up .env file to connect to Pinecone
