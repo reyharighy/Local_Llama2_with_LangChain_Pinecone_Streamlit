@@ -8,7 +8,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Installation](#installation)
 
 ## Introduction
-This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in their [website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
+This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
 
 While building with Llama 2, this repository is intended to leverage its factual accuracy and consistency by providing it with reliable and up-to-date information from the knowledge base. Achieving this involves the model with an external database that could be used to store such novel information. In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope. 
 
@@ -54,21 +54,24 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/python-dotenv?style=for-the-badge&label=python-dotenv&color=%23ff66cc)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/sentence-transformers?style=for-the-badge&label=sentence-transformers&color=%2333cccc)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/gguf?label=gguf&color=%23a6ba0a)<br>
 
 ## Installation
 Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). As our foundatinal model that runs locally, `llama-2-7b-chat.gguf.q2_K` will be the option so we can query to it with secure and cost-free chat conversations. You need to follow these steps:
-1. Download one of GGML version model of Llama 2 on Hugging Face [Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main).
+1. Download one of GGML version model of Llama 2 on [Hugging Face Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main).
 
     Note:
     GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers. This makes GGML an ideal starting point for most local machines, particularly those not equipped with GPUs for machine learning or with limited RAM.
 
-2. After the selected model been downloaded, we need to convert the GGML version into GGUF as it proposed on this [discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This is a breaking change to model files that works with `llama.cpp`. Carefully use `convert-llama-ggml-to-gguf.py` file to accomplish this step on command-line interface.
+2. Once you have downloaded the selected Llama 2 model in the GGML version, it needs to be converted to GGUF, as proposed in [this discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This conversion is considered a breaking change to model files that work with `llama.cpp`. Download `convert-llama-ggml-to-gguf.py` file provided in this repository.
+3. Move the `convert-llama-ggml-to-gguf.py` script directly to the directory where the GGML version is located.
+4. Run this command on command-line interface.
 
    ```bash
    python convert-llama-ggml-to-gguf.py --eps 1e-5 --input llama-2-7b-chat.ggmlv3.q2_K.bin --output llama-2-7b-chat.gguf.q2_K.bin
    ```
 
-3. aaa
+5. aaa
 
 
 ---????---
