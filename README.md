@@ -59,8 +59,9 @@ To set up the project, follow these steps:
 
 
 
-????
+---????---
+- Download Llama 2 model to run locally
+- Change the number of context to 1024
 - Prepare the external data as knowledge base
 - Set up .env file to connect to Pinecone
 - Set up vector store on Pinecone using sentence transformers
-- Change the number of context to 1024
