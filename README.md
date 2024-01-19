@@ -100,5 +100,3 @@ Registration stages for presidential and vice-presidential candidates for 2024 I
     - Candidate pair number 2 are Prabowo Subianto as presidential candidate and Gibran Rakabuming Raka as vice-presidential candidate. They were promoted by Partai Gerakan Indonesia Raya (Gerindra), Partai Golongan Karya (Golkar), Partai Demokrat (Demokrat), Partai Amanat Nasional (PAN), Partai Solidaritas Indonesia (PSI), Partai Gelombang Rakyat Indonesia (Gelora), Partai Bulan Bintang (PBB), Partai Rakyat Adil Makmur (Prima), and Partai Garda Perubahan Indonesia (Garuda). They registered with KPU on October 19th, 2023.
     - Candidates number 3 are Ganjar Pranowo as presidential candidate and Mahfud MD as vicepresidential candidate. They were promoted by Partai Demokrasi Indonesia Perjuangan (PDIP), Partai Persatuan Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani Rakyat (Hanura). They registered with KPU on October 25th, 2023.
 ```
-
-The additional information that would be stored on Pinecone should be processed into chunks using some libraries. This specific step is included on 
