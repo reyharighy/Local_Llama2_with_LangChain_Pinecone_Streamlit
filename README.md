@@ -54,7 +54,7 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/python-dotenv?style=for-the-badge&label=python-dotenv&color=%23ff66cc)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/sentence-transformers?style=for-the-badge&label=sentence-transformers&color=%2333cccc)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
-    ![PyPI - Version](https://img.shields.io/pypi/v/gguf?label=gguf&color=%23a6ba0a)<br>
+    ![PyPI - Version](https://img.shields.io/pypi/v/gguf?style=for-the-badge&label=gguf&color=%23ffacde)<br>
 
 ## Installation
 Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). As our foundatinal model that runs locally, `llama-2-7b-chat.gguf.q2_K` will be the option so we can query to it with secure and cost-free chat conversations. You need to follow these steps:
