@@ -85,7 +85,7 @@ The prompt template for the first turn looks like this:
 {{ user_message }} [/INST]
 ```
 
-This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of Llama 2 model could be checkout on this.
+This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
 
 
 ---????---
