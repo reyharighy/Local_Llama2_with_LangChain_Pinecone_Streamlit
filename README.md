@@ -5,6 +5,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
+- [Installation](#installation)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in their [website](https://ai.meta.com/llama/). It is available for free for research and commercial use. 
@@ -54,7 +55,10 @@ To set up the project, follow these steps:
     ![PyPI - Version](https://img.shields.io/pypi/v/sentence-transformers?style=for-the-badge&label=sentence-transformers&color=%2333cccc)<br>
     ![PyPI - Version](https://img.shields.io/pypi/v/llama-cpp-python?style=for-the-badge&label=llama-cpp-python&color=%23ff00ff)<br>
 
-4. Download **llama-2-7b-chat**
+## Installation
+
+
+
 ????
 - Prepare the external data as knowledge base
 - Set up .env file to connect to Pinecone
