@@ -7,7 +7,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Knowledge Base Improvement](#knowledge_base_improvement)
+- [Knowledge Base Improvement](#knowledge-base-improvement)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/). It is available for free for research and commercial use.
