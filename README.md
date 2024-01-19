@@ -77,7 +77,7 @@ As of introduction section clearly informed previously, the chatbot application 
 
 The prompt template for the first turn looks like this:
 
-```markdown
+```text
 <s>[INST] <<SYS>>
 {{ system_prompt }}
 <</SYS>>
