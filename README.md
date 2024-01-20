@@ -158,7 +158,7 @@ To store additional information above and leverage Pineconce as an index databas
 1. In your Pinecone dashboard, navigate to `Indexes` section. Then, click on `Create Index` button.
 2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
     - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
-    - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts.
+    - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts. Simply check out [this notebook](sentence_transformer_dimension.ipynb) on how to know your sentence transformer dimension.
 
       ```python
       from sentence_transformers import SentenceTransformer
