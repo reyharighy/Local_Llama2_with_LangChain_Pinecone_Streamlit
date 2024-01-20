@@ -268,8 +268,23 @@ To store additional information above and leverage Pinecone as an index database
 ## Chatbot Interaction
 Upon attempting to test the Llama 2 model's ability to provide factual and relevant responses to contextual query given by user, we can specify the real environment using `streamlit` library as chatbot UI. This library would ease our efforts in building chatbot application in just a matter of `pip install streamlit` and you're done. Now check out [their documentations](https://docs.streamlit.io/) to get along with it.
 
-I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experiences required, simply just by using their magically simple API. As for the back-end process, I have also provided [dedicated file](utils.py) on this repository to integrate with Llama 2 model. You can directly run this command on command-line interface to have the chatbot application running locally.
+I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experiences required, simply just by using their magically simple API. As for the back-end process, I have also provided [dedicated file](utils.py) on this repository to integrate with Llama 2 model and Pinecone index database. You can directly run this command on command-line interface to have the chatbot application running locally.
 
 ```bash
 streamlit run app.py
 ```
+
+A few things you should consider in playing around with this application is that the Llama 2 model has default configuration that needs to reconfigure. For example, context length of Llama 2 model is set to 512 tokens which means the input token passed to the model must not exceed its maximum input context. This problem could be handled by altering the context length parameter to higher value such as 4096 tokens at maximum. You need to follow these steps in order to achieve this goal:
+1. Use your text editor to open `llamacpp.py` file that can be found inside `site-packages` of your virtual environment, specifically on `llms` folder of `langchain_community` library.
+2. Change the parameter of `n_ctx` in line 44 to another (4096 at maximum).
+
+    ```python
+    ...
+    
+    n_ctx: int = Field(512, alias="n_ctx") # change context length here
+    """Token context window."""
+
+    ...
+    ```
+
+3. Then, save it.
