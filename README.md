@@ -132,7 +132,7 @@ llm.invoke(
 ## Knowledge Base Improvement
 As outlined in the introduction section, the primary objective of this repository is to enhance the accuracy of the Llama 2 model when providing answers to questions related to contexts outside its training data. To achieve this, we integrate the Llama 2 model with Pinecone, serving as an index database to store additional information that may not be present in Llama 2's knowledge base.
 
-As part of our research, we have included trending and hot topics related to Indonesia's 2024 general election on this repository from `external_data` folder. It's important to note that this information is beyond Llama 2's knowledge, and we leverage Pinecone to store and retrieve this curated content. The information provided is reliable and maintains a neutral stance, avoiding any tendencies toward specific political choices. This research serves a purely academic and exploratory purpose.
+As part of our research, we have included trending and hot topics related to Indonesia's 2024 general election on this repository from `external_data` folder. It's important to note that this information is beyond Llama 2's knowledge, and we leverage Pinecone to store and retrieve this curated content. The information provided is reliable and maintains a neutral stance, avoiding any tendencies toward specific political choices.
 
 ```text
 Registration stages for presidential and vice-presidential candidates for 2024 Indonesia’s general election
