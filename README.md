@@ -268,4 +268,8 @@ To store additional information above and leverage Pinecone as an index database
 ## Chatbot Interaction
 Upon attempting to test the Llama 2 model's ability to provide factual and relevant responses to contextual query given by user, we can specify the real environment using `streamlit` library as chatbot UI. This library would ease our efforts in building chatbot application in just a matter of `pip install streamlit` and you're done. Now check out [their documentations](https://docs.streamlit.io/) to get along with it.
 
-I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experience required. 
+I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experiences required, simply just by using their magically simple API. As for the back-end process, I have also provided [dedicated file](utils.py) on this repository to integrate with Llama 2 model. You can directly run this command on command-line interface to have the chatbot application running locally.
+
+```bash
+streamlit run app.py
+```
