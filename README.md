@@ -274,8 +274,8 @@ I have provided the application script on [this file](app.py) in case you want t
 streamlit run app.py
 ```
 
-A few things you should consider in playing around with this application is that the Llama 2 model has default configuration that needs to reconfigure. For example, context length of Llama 2 model is set to 512 tokens which means the input token passed to the model must not exceed its input context. This problem could be handled by altering the context length parameter to higher value such as 4096 tokens at maximum. You need to follow these steps in order to achieve this goal:
-1. Use your text editor to open `llamacpp.py` file that can be found inside `site-packages` of your virtual environment, specifically on `llms` folder of `langchain_community` library.
+A few things you should consider in playing around with this application is that the Llama 2 model has default configuration that needs to reconfigure. For example, context length of Llama 2 model is set to 512 tokens which means the input tokens passed to the model must not exceed its input context length. This problem could be handled by altering the context length parameter to higher value such as 4096 tokens at maximum. You need to follow these steps in order to achieve this goal:
+1. Use your text editor to open `llamacpp.py` file that can be found inside `site-packages` of your virtual environment, specifically on `llms` folder of `langchain_community` library distribution.
 2. Change the parameter of `n_ctx` in line 44 to another (4096 at maximum).
 
     ```python
