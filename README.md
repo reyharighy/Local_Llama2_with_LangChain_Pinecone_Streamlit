@@ -110,8 +110,8 @@ llm = LlamaCpp(
 system_prompt = "You are respectful and helpful assistant."
 user_prompt = "What is Llama 2 model?"
 
-input_prompt = f"""\
-<s>[INST] <<SYS>>
+input_prompt = \
+f"""<s>[INST] <<SYS>>
 {system_prompt}
 <</SYS>>
 
