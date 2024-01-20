@@ -169,11 +169,11 @@ To store additional information above and leverage Pineconce as an index databas
 
       text = "When will Indonesia's general election be held?"
     
-      input_embedded = sentence_transformer.encode(
+      input_encoded = sentence_transformer.encode(
           sentences=text
       ).tolist()
     
-      print('Dimension:', len(input_embedded))
+      print('Dimension:', len(input_encoded))
       ```
 
     - **Metric**: For similarity search, use cosine metric.
@@ -245,7 +245,7 @@ To store additional information above and leverage Pineconce as an index databas
         model_name_or_path='all-MiniLM-L6-v2'
     )
     
-    input_embedded = sentence_transformer.encode(
+    input_encoded = sentence_transformer.encode(
         sentences="Who are presidential and vice-presidential candidates for Indonesia's general election?"
     ).tolist()
     
@@ -256,7 +256,7 @@ To store additional information above and leverage Pineconce as an index databas
     )
     
     results = pinecode_index.query(
-        vector=input_embedded,
+        vector=input_encoded,
         top_k=10,
         include_metadata=True
     )
