@@ -10,6 +10,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Knowledge Base Improvement](#knowledge-base-improvement)
 - [Chatbot Interaction](#chatbot-interaction)
 - [Extras](#extras)
+- [Exceptional Inspirations](#exceptional-inspirations)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of the Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/).
@@ -366,3 +367,10 @@ if user_input := streamlit.chat_input(
 
 ...
 ```
+
+With this extension capability, Llama 2 model would still be able to process English-translated query with the help of `easygoogletranslate` library. While this solution provides a viable approach, it could have some drawbacks as it relies heavily on external library as well as the translation accuracy and latency. Hence, the advancement progress of this repository research must still go on.
+
+## Exceptional Inspirations
+This repository couldn't be made with the help of this blog.
+- [Building an Interactive Chatbot with Langchain, ChatGPT, Pinecone, and Streamlit](https://blog.futuresmart.ai/building-an-interactive-chatbot-with-langchain-chatgpt-pinecone-and-streamlit#heading-setting-up-the-environment).
+- [Implementing Locally-Hosted Llama2 Chat UI Using Streamlit](https://medium.com/@daydreamersjp/implementing-locally-hosted-llama2-chat-ui-using-streamlit-53b181651b4e).
