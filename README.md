@@ -372,5 +372,5 @@ With this extension capability, Llama 2 model would still be able to process Eng
 
 ## Exceptional Inspirations
 This repository couldn't be made with the help of this blog.
-- [Building an Interactive Chatbot with Langchain, ChatGPT, Pinecone, and Streamlit](https://blog.futuresmart.ai/building-an-interactive-chatbot-with-langchain-chatgpt-pinecone-and-streamlit).
-- [Implementing Locally-Hosted Llama2 Chat UI Using Streamlit](https://medium.com/@daydreamersjp/implementing-locally-hosted-llama2-chat-ui-using-streamlit-53b181651b4e).
+- [Building an Interactive Chatbot with Langchain, ChatGPT, Pinecone, and Streamlit](https://blog.futuresmart.ai/building-an-interactive-chatbot-with-langchain-chatgpt-pinecone-and-streamlit)
+- [Implementing Locally-Hosted Llama2 Chat UI Using Streamlit](https://medium.com/@daydreamersjp/implementing-locally-hosted-llama2-chat-ui-using-streamlit-53b181651b4e)
