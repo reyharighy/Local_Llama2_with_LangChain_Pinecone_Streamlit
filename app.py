@@ -133,7 +133,7 @@ def main() -> None:
             )
         )
 
-        # Translate the answer into Indonesian if language choses is Indonesian
+        # Translate the answer into Indonesian if language chosen is Indonesian
         if language == 'Indonesian':
             translated_answer = EasyGoogleTranslate(
                     source_language='en',
