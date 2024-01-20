@@ -119,7 +119,24 @@ Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani 
 registered with KPU on October 25th, 2023.
 ```
 
-To store additional information above and leverage Pineconce as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) in order to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pineconce dashboard, where you can create and manage indexes.
+To store additional information above and leverage Pineconce as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) in order to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pineconce dashboard, where you can create and manage indexes. Follow these steps to set up your Pinecone index:
+1. In your Pinecone dashboard, navigate to `Indexes` section. Then, click on `Create Index` button.
+2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
+    - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
+    - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts.
+      ```python
+        from sentence_transformers import SentenceTransformer
+        
+        sentence_transformer = SentenceTransformer(
+        model_name_or_path='all-MiniLM-L6-v2'
+        )
+        
+        input_embedded = sentence_transformer.encode(
+        sentences="Who are presidential and vice-presidential candidates for Indonesia's general election?"
+        ).tolist()
+        
+        print('Dimension:', len(input_embedded))
+      ``` 
 
 Upon creating an index, I personally choose Free Plan package where some parameters would still need to be input. At least, you have to specify the index name which you can give it arbitrarily and set up the dimension as well as the metric. As for the last two parameters, you can look up the sentence transformer used when encoding and decoding the information. We can use `all-MiniLM-L6-v2` sentence transformer from `langchain` library which converts the texts into 384 dimensions. To search the similarity from the query, we can use cosine metric. 
 
