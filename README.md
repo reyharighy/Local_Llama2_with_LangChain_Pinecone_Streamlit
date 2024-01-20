@@ -154,7 +154,7 @@ Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani 
 registered with KPU on October 25th, 2023.
 ```
 
-To store additional information above and leverage Pineconce as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pineconce dashboard, where you can create and manage indexes. Follow these steps to set up your Pinecone index:
+To store additional information above and leverage Pinecone as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pinecone dashboard, where you can create and manage indexes. Follow these steps to set up your Pinecone index:
 1. In your Pinecone dashboard, navigate to `Indexes` section. Then, click on `Create Index` button.
 2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
     - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
