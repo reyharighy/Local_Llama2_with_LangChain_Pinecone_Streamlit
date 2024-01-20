@@ -76,7 +76,7 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
     **Note**: Change the name of GGML version model in the script input to the one you have downloaded. Optionally, specify an arbitrary name for the GGUF version model as the script output.
  
 ## Usage
-As of introduction section clearly informed previously, the chatbot application should behave as if it's an assistant that intelligently and interactively reply to whatever query we apply. This is essential to specify the behaviour of the assistant because of the unsung advantages of the Llama 2 as open-access models. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
+The chatbot application in this repository is designed to behave as an intelligent and interactive assistant, providing insightful replies to a wide range of queries. Leveraging the capabilities of the Llama 2 open-access models, the chatbot aims to offer valuable assistance in various domains. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
 
 The prompt template for the first turn looks like this:
 
