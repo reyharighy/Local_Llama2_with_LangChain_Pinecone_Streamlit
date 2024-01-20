@@ -29,13 +29,15 @@ To set up the project, follow these steps:
     ```
 
 3. Activate the virtual environment after it's done created.
-    - On Windows:<br>
+    - On Windows:
+
 
     ```bash
     llm_env\Scripts\activate
     ```
 
-    - On Unix or MacOS:<br>
+    - On Unix or MacOS:
+
 
     ```bash
     source llm_env\bin\activate
@@ -138,6 +140,7 @@ To store additional information above and leverage Pineconce as an index databas
         ).tolist()
         
         print('Dimension:', len(input_embedded))
+    
         # Output: Dimension: 384
       ``` 
 
