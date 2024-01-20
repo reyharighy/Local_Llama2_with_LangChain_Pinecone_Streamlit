@@ -14,7 +14,9 @@ This repository contains the code and resources to create a chatbot using Llama 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of the Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/).
 
-While building with Llama 2, this repository is intended to leverage its factual accuracy and consistency by providing it with reliable and up-to-date information from the knowledge base. Achieving this involves the model with an external database that could be used to store such novel information. In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope. 
+While building with Llama 2, this repository is intended to leverage its factual accuracy and consistency by providing it with reliable and up-to-date information from the knowledge base. Achieving this involves the model with an external database that could be used to store such novel information. 
+
+In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope. 
 
 ## Features
 - **LangChain**: A specialized framework designed for developping language model applications, providing seamless integration with the powerful Llama 2 model. The framework offers off-the-shelf chains for easy initiation as well as customizable components for tailoring existing chains or building new ones. The LangChain libraries themselves are made up of several different packages, with `langchain_community` serving as a hub for third party integrations. Within this package, `llama-cpp-python` is particularly relevant for the specific purpose of this repository. It acts as a Python binding for `llama.cpp` and supports inference for many Llama 2 models.
@@ -269,7 +271,9 @@ To store additional information above and leverage Pinecone as an index database
 ## Chatbot Interaction
 Upon attempting to test the Llama 2 model's ability to provide factual and relevant responses to contextual query given by user, we can specify the real environment using `streamlit` library as chatbot UI. This library would ease our efforts in building chatbot application in just a matter of `pip install streamlit` and you're done. Now check out [their documentations](https://docs.streamlit.io/) to get along with it.
 
-I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experiences required, simply just by using their magically simple API. As for the back-end process, I have also provided [dedicated file](utils.py) on this repository to integrate with Llama 2 model and Pinecone index database. You can directly run this command on command-line interface to have the chatbot application running locally.
+I have provided the application script on [this file](app.py) in case you want to try it out immediately. It's all in pure Python and no front-end experiences required, simply just by using their magically simple API. As for the back-end process, I have also provided [dedicated file](utils.py) on this repository to integrate with Llama 2 model and Pinecone index database.
+
+You can directly run this command on command-line interface to have the chatbot application running locally.
 
 ```bash
 streamlit run app.py
