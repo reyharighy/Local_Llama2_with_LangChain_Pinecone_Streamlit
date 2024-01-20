@@ -31,11 +31,13 @@ To set up the project, follow these steps:
 3. Activate the virtual environment after it's done created.
     - On Windows:
 
+
     ```bash
     llm_env\Scripts\activate
     ```
 
     - On Unix or MacOS:
+
 
     ```bash
     source llm_env\bin\activate
@@ -124,6 +126,8 @@ To store additional information above and leverage Pineconce as an index databas
 2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
     - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
     - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts.
+
+
       ```python
         from sentence_transformers import SentenceTransformer
         
