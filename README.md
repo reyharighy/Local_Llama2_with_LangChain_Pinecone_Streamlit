@@ -192,3 +192,77 @@ To store additional information above and leverage Pineconce as an index databas
    ```
 
 5. Store the additional information into Pinecone index database by simply following the steps provided on [this notebook](pinecone_store_index.ipynb).
+    ```python
+    from langchain_community.document_loaders import DirectoryLoader
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    
+    loader = DirectoryLoader(
+        path='external_data/'
+    )
+    
+    documents = loader.load()
+    
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=2000,
+        chunk_overlap=200
+    )
+    
+    document_split = text_splitter.split_documents(
+        documents=documents
+    )
+
+    import os
+    from dotenv import load_dotenv
+    
+    from pinecone import Pinecone
+    from langchain.vectorstores import Pinecone as vec_storer
+    from langchain.embeddings import SentenceTransformerEmbeddings
+    
+    load_dotenv()
+    
+    api_key = os.getenv(
+        key='PINECONE_API_KEY'
+    )
+    
+    index_name = os.getenv(
+        key='PINECONE_INDEX_NAME'
+    )
+    
+    Pinecone(
+        api_key=api_key
+    )
+    
+    embedding_model = SentenceTransformerEmbeddings(
+        model_name='all-MiniLM-L6-v2'
+    )
+    
+    vec_storer.from_documents(
+        documents=document_split,
+        embedding=embedding_model,
+        index_name=index_name
+    )
+
+    from sentence_transformers import SentenceTransformer
+
+    sentence_transformer = SentenceTransformer(
+        model_name_or_path='all-MiniLM-L6-v2'
+    )
+    
+    input_embedded = sentence_transformer.encode(
+        sentences="Who are presidential and vice-presidential candidates for Indonesia's general election?"
+    ).tolist()
+    
+    pinecode_index = Pinecone(
+        api_key=api_key
+    ).Index(
+        name=index_name
+    )
+    
+    results = pinecode_index.query(
+        vector=input_embedded,
+        top_k=10,
+        include_metadata=True
+    )
+    
+    results['matches']
+    ```
