@@ -299,7 +299,9 @@ This chatbot application is already spun up and serves this repository objective
 
 As of paper released about Llama 2 by Meta AI, the model was primarily trained on English with a bit of additional data from 27 other languages (see Table 10 on page 20 of the [Llama 2 paper](https://arxiv.org/abs/2307.09288). Still, it's not expected to have the same level of performance in other languages as in English. The good news is you can look at some of [community lead projects](https://hpc-ai.com/blog/one-half-day-of-training-using-a-few-hundred-dollars-yields-similar-results-to-mainstream-large-models-open-source-and-commercial-free-domain-specific-llm-solution) to fine-tune Llama 2 models to support other languages.
 
-The limitation of Llama 2 model used in this repository project has come up with inability to process given query in other languages, besides English. That's why user must specify which language to use in chatbot options at first. To achieve this goal, we can use `easygoogletranslate` library that has an ability to translate the input query in other languages into English and translate it back to the language opted before feeding the response to user in the chatbot application. The modified codes could be seen as this:
+The limitation of Llama 2 model used in this repository project has come up with inability to process given query in other languages, besides English. That's why user must specify which language to use in chatbot options at first. To achieve this goal, we can use `easygoogletranslate` library that has an ability to translate the input query in other languages into English and translate it back to the language opted before feeding the response to user in the chatbot application. 
+
+The modified codes could be seen as this:
 
 ```python
 ...
