@@ -9,6 +9,7 @@ This repository contains the code and resources to create a chatbot using Llama 
 - [Usage](#usage)
 - [Knowledge Base Improvement](#knowledge-base-improvement)
 - [Chatbot Interaction](#chatbot-interaction)
+- [Extras](#extras)
 
 ## Introduction
 This project aims to showcase the integration of technologies to build an intelligent and interactive chatbot that runs locally. The main focus is to take advantage of the Llama 2 as open source Large Language Model developed by Meta AI as introduced in [their website](https://ai.meta.com/llama/).
@@ -288,3 +289,6 @@ A few things you should consider in playing around with this application is that
     ```
 
 3. Then, save it.
+
+## Extras
+aaa
