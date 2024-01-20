@@ -118,3 +118,5 @@ candidate. They were promoted by Partai Demokrasi Indonesia Perjuangan (PDIP), P
 Pembangunan (PPP), Partai Persatuan Indonesia (Perindo), and Partai Hati Nurani Rakyat (Hanura). They
 registered with KPU on October 25th, 2023.
 ```
+
+To store additional information above and leverage as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) in order to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pineconce dashboard, where you can create and manage indexes.
