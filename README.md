@@ -279,7 +279,7 @@ You can directly run this command on command-line interface to have the chatbot 
 streamlit run app.py
 ```
 
-A few things you should consider in playing around with this application is that the Llama 2 model has default configuration that needs to reconfigure. For example, context length of Llama 2 model is set to 512 tokens which means the input tokens passed to the model must not exceed its input context length. This problem could be handled by altering the context length parameter to higher value such as 4096 tokens at maximum. You need to follow these steps in order to achieve this goal:
+A few things you should consider in playing around with this application is that the Llama 2 model has default configuration that needs to reconfigure. For example, context length is set to 512 tokens which means the input tokens passed to the model must not exceed its value. This problem could be handled by altering the context length parameter to higher value such as 4096 tokens at maximum. You need to follow these steps in order to achieve this goal:
 1. Use your text editor to open `llamacpp.py` file that can be found inside `site-packages` of your virtual environment, specifically on `llms` folder of `langchain_community` library distribution.
 2. Change the parameter of `n_ctx` in line 44 to another (4096 at maximum).
 
@@ -298,3 +298,69 @@ A few things you should consider in playing around with this application is that
 This chatbot application is already spun up and serves this repository objective. Considering the added context on Pinecone index database, I have conducted an experiment to add an extra feature that enables Indonesian language within the application. 
 
 As of paper released about Llama 2 by Meta AI, the model was primarily trained on English with a bit of additional data from 27 other languages (see Table 10 on page 20 of the [Llama 2 paper](https://arxiv.org/abs/2307.09288). Still, it's not expected to have the same level of performance in other languages as in English. The good news is you can look at some of [community lead projects](https://hpc-ai.com/blog/one-half-day-of-training-using-a-few-hundred-dollars-yields-similar-results-to-mainstream-large-models-open-source-and-commercial-free-domain-specific-llm-solution) to fine-tune Llama 2 models to support other languages.
+
+The limitation of Llama 2 model used in this repository project has come up with inability to process given query in other languages, besides English. That's why user must specify which language to use in chatbot options at first. To achieve this goal, we can use `easygoogletranslate` library that has an ability to translate the input query in other languages into English and translate it back to the language opted before feeding the response to user in the chatbot application. The modified codes could be seen as this:
+
+```python
+...
+
+if user_input := streamlit.chat_input(
+        placeholder=page_text[language][0]
+    ):
+        # Translate the query input if chosen language is Indonesian
+        if language == 'Indonesian':
+            processed_input = EasyGoogleTranslate(
+                source_language='id',
+                target_language='en'
+            ).translate(
+                text=user_input
+            )
+        else:
+            processed_input = user_input
+
+        streamlit.session_state.english.append(
+            HumanMessage(
+                content=processed_input
+            )
+        )
+
+        streamlit.session_state.indonesian.append(
+            HumanMessage(
+                content=user_input
+            )
+        )
+
+...
+
+        # Running the model to get the answer in each session
+        with streamlit.spinner(
+            text=page_text[language][1]
+        ):
+            answer = get_answer(
+                llm=llm,
+                messages=streamlit.session_state.english
+            )
+
+        streamlit.session_state.english.append(
+            AIMessage(
+                content=answer
+            )
+        )
+
+        # Translate the answer into Indonesian if language chosen is Indonesian
+        if language == 'Indonesian':
+            translated_answer = EasyGoogleTranslate(
+                    source_language='en',
+                    target_language='id'
+                ).translate(
+                    text=answer
+                )
+
+            streamlit.session_state.indonesian.append(
+                AIMessage(
+                    content=translated_answer
+                )
+            )
+
+...
+```
