@@ -145,8 +145,9 @@ To store additional information above and leverage Pineconce as an index databas
 
     - **Metric**: For similarity search, use cosine metric.
 
-    ![Creating Index](Create-Free-Tier-Pinecone-Index.png)
+    ![Create Index](Create-Free-Tier-Pinecone-Index.png)
 3. Once index created, navigate to `API Keys` section. Then, copy API key provided by Pinecone for your account.
+    ![Create Index](Create-Free-Tier-Pinecone-Index.png)
 4. Create a `.env` file to store information related to your Pinecone account and index.
 
    ```env
@@ -154,4 +155,4 @@ To store additional information above and leverage Pineconce as an index databas
    PINECONE_INDEX_NAME=INPUT YOUR INDEX NAME HERE
    ```
 
-6. aa
+5. aa
