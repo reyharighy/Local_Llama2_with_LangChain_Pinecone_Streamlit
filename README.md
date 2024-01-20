@@ -63,8 +63,7 @@ To set up the project, follow these steps:
 Llama 2 comes with various flavors that could be regarded as a family of state-of-the-art open-access Large Language Model. It's available with 12 open-access models with detailed of 3 base models and 3 fine-tuned ones with the original Meta checkpoints, plus their corresponding transformers models. Please go find more information about it on [Hugging Face](https://huggingface.co/meta-llama). In order to install the Llama 2 model, you need to follow these steps:
 1. Download one of GGML version model of Llama 2 on [Hugging Face Repository](https://huggingface.co/localmodels/Llama-2-7B-Chat-ggml/tree/main). I personally choose `llama-2-7b-chat.gguf.q2_K` version as the foundational model that runs locally. You can choose whichever model that you want.
 
-    Note:
-    GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers. This makes GGML an ideal starting point for most local machines, particularly those not equipped with GPUs for machine learning or with limited RAM.
+    **Note**: GGML is a machine learning library designed specifically to handle large models efficiently and deliver high performance on standard hardware. It employs a quantized representation of model weights, meaning it utilizes approximated parameters instead of full version. While this may result in a slight reduction in accuracy, the significant trade-off is evident in the resource efficiency it offers. This makes GGML an ideal starting point for most local machines, particularly those not equipped with GPUs for machine learning or with limited RAM.
 
 2. Once downloaded, the GGML version needs to be converted to GGUF as proposed in [this discussion](https://github.com/abetlen/llama-cpp-python/pull/633). This conversion is considered a breaking change to model files that work with `llama.cpp`. Download `convert-llama-ggml-to-gguf.py` file provided in this repository.
 3. Move the `convert-llama-ggml-to-gguf.py` script directly to the directory where the GGML version model is located.
@@ -74,8 +73,7 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
    python convert-llama-ggml-to-gguf.py --eps 1e-5 --input llama-2-7b-chat.ggmlv3.q2_K.bin --output llama-2-7b-chat.gguf.q2_K.bin
    ```
 
-    Note:
-    Change the name of GGML version model in the script input to the one you have downloaded. Optionally, specify an arbitrary name for the GGUF version model as the script output.
+    **Note**: Change the name of GGML version model in the script input to the one you have downloaded. Optionally, specify an arbitrary name for the GGUF version model as the script output.
  
 ## Usage
 As of introduction section clearly informed previously, the chatbot application should behave as if it's an assistant that intelligently and interactively reply to whatever query we apply. This is essential to specify the behaviour of the assistant because of the unsung advantages of the Llama 2 as open-access models. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
