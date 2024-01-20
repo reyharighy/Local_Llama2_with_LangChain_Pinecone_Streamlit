@@ -29,15 +29,13 @@ To set up the project, follow these steps:
     ```
 
 3. Activate the virtual environment after it's done created.
-    - On Windows:
-
+    - On Windows:<br>
 
     ```bash
     llm_env\Scripts\activate
     ```
 
-    - On Unix or MacOS:
-
+    - On Unix or MacOS:<br>
 
     ```bash
     source llm_env\bin\activate
