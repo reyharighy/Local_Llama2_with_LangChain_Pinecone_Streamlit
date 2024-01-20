@@ -132,9 +132,11 @@ To store additional information above and leverage Pineconce as an index databas
       sentence_transformer = SentenceTransformer(
           model_name_or_path='all-MiniLM-L6-v2'
       )
+
+      text = "When will Indonesia's general election be held?"
     
       input_embedded = sentence_transformer.encode(
-          sentences="Who are presidential and vice-presidential candidates for Indonesia's general election?"
+          sentences=text
       ).tolist()
     
       print('Dimension:', len(input_embedded))
