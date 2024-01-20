@@ -193,8 +193,14 @@ To store additional information above and leverage Pineconce as an index databas
 
 5. Store the additional information into Pinecone index database by simply following the steps provided on [this notebook](pinecone_store_index.ipynb).
     ```python
+    import os
+    from dotenv import load_dotenv
+    from pinecone import Pinecone
+    from langchain.vectorstores import Pinecone as vec_storer
+    from langchain.embeddings import SentenceTransformerEmbeddings
     from langchain_community.document_loaders import DirectoryLoader
     from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from sentence_transformers import SentenceTransformer
     
     loader = DirectoryLoader(
         path='external_data/'
@@ -210,13 +216,6 @@ To store additional information above and leverage Pineconce as an index databas
     document_split = text_splitter.split_documents(
         documents=documents
     )
-
-    import os
-    from dotenv import load_dotenv
-    
-    from pinecone import Pinecone
-    from langchain.vectorstores import Pinecone as vec_storer
-    from langchain.embeddings import SentenceTransformerEmbeddings
     
     load_dotenv()
     
@@ -241,8 +240,6 @@ To store additional information above and leverage Pineconce as an index databas
         embedding=embedding_model,
         index_name=index_name
     )
-
-    from sentence_transformers import SentenceTransformer
 
     sentence_transformer = SentenceTransformer(
         model_name_or_path='all-MiniLM-L6-v2'
