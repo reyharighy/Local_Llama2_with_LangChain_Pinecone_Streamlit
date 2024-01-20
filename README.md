@@ -73,7 +73,7 @@ Llama 2 comes with various flavors that could be regarded as a family of state-o
    python convert-llama-ggml-to-gguf.py --eps 1e-5 --input llama-2-7b-chat.ggmlv3.q2_K.bin --output llama-2-7b-chat.gguf.q2_K.bin
    ```
 
-    **Note**: Change the name of GGML version model in the script input to the one you have downloaded. Optionally, specify an arbitrary name for the GGUF version model as the script output.
+    **Note**: Change the name of GGML version model in the script input to the one you have downloaded. Then, specify an arbitrary name for the GGUF version model as the script output.
  
 ## Usage
 The chatbot application in this repository is designed to behave as an intelligent and interactive assistant, providing insightful replies to a wide range of queries. Leveraging the capabilities of the Llama 2 open-access models, the chatbot aims to offer valuable assistance in various domains. By this, we should be able to know how to prompt the models as well as how to change the system prompt. You can actually get to know about it through this release of [Hugging Face Blog](https://huggingface.co/blog/llama2#how-to-prompt-llama-2). 
@@ -191,4 +191,4 @@ To store additional information above and leverage Pineconce as an index databas
    PINECONE_INDEX_NAME=INPUT YOUR INDEX NAME HERE
    ```
 
-5. aa
+5. Store the additional information into Pinecone index database by simply following the steps provided on [this notebook](pinecone_store_index.ipynb).
