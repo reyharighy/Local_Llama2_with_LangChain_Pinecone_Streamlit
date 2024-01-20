@@ -31,16 +31,14 @@ To set up the project, follow these steps:
 3. Activate the virtual environment after it's done created.
     - On Windows:
 
-
     ```bash
-    llm_env\Scripts\activate
+        llm_env\Scripts\activate
     ```
 
     - On Unix or MacOS:
 
-
     ```bash
-    source llm_env\bin\activate
+        source llm_env\bin\activate
     ```
 
 4. Download `requirements.txt` file provided in this repository and navigate to the directory where the file is located. Then, install all dependencies included by running this command.
