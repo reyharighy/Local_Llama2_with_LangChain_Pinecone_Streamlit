@@ -189,8 +189,8 @@ To store additional information above and leverage Pinecone as an index database
 4. Create a `.env` file in your project directory to store information related to your Pinecone account and index.
 
    ```env
-   PINECONE_API_KEY=INPUT YOUR API KEY HERE
-   PINECONE_INDEX_NAME=INPUT YOUR INDEX NAME HERE
+   PINECONE_API_KEY=PUT YOUR API KEY HERE
+   PINECONE_INDEX_NAME=PUT YOUR INDEX NAME HERE
    ```
 
 5. Store the additional information into Pinecone index database by simply following the steps provided on [this notebook](pinecone_store_index.ipynb).
