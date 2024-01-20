@@ -123,4 +123,4 @@ To store additional information above and leverage Pineconce as an index databas
 
 Upon creating an index, I personally choose Free Plan package where some parameters would still need to be input. At least, you have to specify the index name which you can give it arbitrarily and set up the dimension as well as the metric. As for the last two parameters, you can look up the sentence transformer used when encoding and decoding the information. We can use `all-MiniLM-L6-v2` sentence transformer from `langchain` library which converts the texts into 384 dimensions. To search the similarity from the query, we can use cosine metric. 
 
-![Creating Index](Create Free Tier Pinecone Index.png)
+![Creating Index](Create-Free-Tier-Pinecone-Index.png)
