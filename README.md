@@ -291,4 +291,4 @@ A few things you should consider in playing around with this application is that
 3. Then, save it.
 
 ## Extras
-aaa
+This chatbot application is already spun up and serves this repository objective. Considering the added context on Pinecone index database, I have conducted an experiment to add an extra feature that enables Indonesian language within the application. As of paper released about Llama 2 by Meta AI, the model was primarily trained on English with a bit of additional data from 27 other languages (see Table 10 on page 20 of the [Llama 2 paper](https://arxiv.org/abs/2307.09288). Still, it's not expected to have the same level of performance in other languages as in English. The good news is you can look at some of the community lead projects to fine-tune Llama 2 models to support other languages.
