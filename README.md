@@ -90,6 +90,41 @@ The prompt template for the first turn looks like this:
 
 This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of the Llama 2 model has been provided on this repository from [this notebook](simple_usage.ipynb).
 
+```python
+from langchain.callbacks.manager import CallbackManager
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain_community.llms.llamacpp import LlamaCpp
+
+# Establish callback to LLM for logging, monitoring, streaming and other tasks
+callback_manager = CallbackManager(
+    handlers=[StreamingStdOutCallbackHandler()]
+)
+
+llm = LlamaCpp(
+    model_path='llama-2-7b-chat.gguf.q2_K.bin',
+    callback_manager=callback_manager,
+    verbose=True,
+    streaming=True
+)
+
+system_prompt = "You are respectful and helpful assistant."
+user_prompt = "What is Llama 2 model?"
+
+input_prompt = \
+f"""<s>[INST] <<SYS>>
+{system_prompt}
+<</SYS>>
+
+{user_prompt} [/INST]
+"""
+
+print("\nINPUT:\n" + input_prompt + '\nANSWER:')
+
+llm.invoke(
+    input=input_prompt
+)
+```
+
 ## Knowledge Base Improvement
 As outlined in the introduction section, the primary objective of this repository is to enhance the accuracy of the Llama 2 model when providing answers to questions related to contexts outside its training data. To achieve this, we integrate the Llama 2 model with Pinecone, serving as an index database to store additional information that may not be present in Llama 2's knowledge base.
 
@@ -123,8 +158,7 @@ To store additional information above and leverage Pineconce as an index databas
 1. In your Pinecone dashboard, navigate to `Indexes` section. Then, click on `Create Index` button.
 2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
     - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
-    - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts.
-
+    - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts. 
 
       ```python
       from sentence_transformers import SentenceTransformer
