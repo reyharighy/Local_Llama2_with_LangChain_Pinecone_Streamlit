@@ -149,7 +149,7 @@ To store additional information above and leverage Pineconce as an index databas
 
 4. Once index created, navigate to `API Keys` section. Then, copy API key provided by Pinecone for your account.
 
-    ![Create Index](Create-Free-Tier-Pinecone-Index.png)
+    ![Copy API Key](Create-Pinecone-API-Key.png)
 
 6. Create a `.env` file to store information related to your Pinecone account and index.
 
