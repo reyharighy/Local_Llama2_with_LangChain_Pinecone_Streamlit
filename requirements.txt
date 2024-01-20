@@ -1,8 +1,9 @@
-streamlit==1.30.0
+unstructured[all-docs]
 langchain==0.1.1
+streamlit==1.30.0
 easygoogletranslate==0.0.4
-pinecone-client==3.0.0
+pinecone-client==3.0.1
 python-dotenv==1.0.0
 sentence-transformers==2.2.2
-llama-cpp-python==0.2.29
+llama-cpp-python==0.2.31
 gguf==0.6.0
