@@ -160,7 +160,7 @@ registered with KPU on October 25th, 2023.
 
 To store additional information above and leverage Pinecone as an index database, you'll need to have a Pinecone account. If you don't have one yet, please go directly to [this link](https://app.pinecone.io/?sessionType=signup) to sign up for free. Once registered, you can log in to your Pinecone account and then will be directed to Pinecone dashboard, where you can create and manage indexes. Follow these steps to set up your Pinecone index:
 1. In your Pinecone dashboard, navigate to `Indexes` section. Then, click on `Create Index` button.
-2. I personally choose the Free Plan package which you need to provide the following parameters for your index.
+2. I personally choose the Free Plan package to which you need to provide the following parameters for your index.
     - **Name**: Give your index a name. You can choose an arbitrary name that makes sense for your project.
     - **Dimension**: Set the dimension for your index. You can look up the sentence transformer used when encoding the texts. Simply check out [this notebook](sentence_transformer_dimension.ipynb) on how to know your sentence transformer dimension.
 
