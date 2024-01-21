@@ -1,3 +1,4 @@
+<img src="gif_llama2.gif" width="50%" height="50%"/>
 ![til](gif_llama2.gif)
 
 ## Overview
