@@ -27,7 +27,7 @@ In order to keep it as simple as it goes, this repository focuses solely on meet
 ## Requirements
 To set up the project, follow these steps:
 1. Create a dedicated directory for the purpose of this project using your preferred file manager or command-line interface.
-2. It's always a best practice to create a virtual environment to manage dependencies for your project which you can decide to give the name arbitrarily. I personally name it `llm_env` in my project. Please make sure that you already have Python installed, preferably with a version above 3.8.x or higher in order to get along with this. Open the terminal and navigate to the project directory you have provided. Run this command to create a virtual environment.
+2. It's always a best practice to create a virtual environment to manage dependencies for your project which you can decide to give the name arbitrarily. I personally name it `llm_env` in my project. Please make sure that you already have Python installed, preferably with a version above 3.9.x or higher in order to get along with this. Open the terminal and navigate to the project directory you have provided. Run this command to create a virtual environment.
 
     ```bash
     python -m venv llm_env 
