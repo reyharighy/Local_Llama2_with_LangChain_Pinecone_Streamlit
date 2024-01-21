@@ -1,5 +1,4 @@
-<img src="gif_llama2.gif" width="50%" height="50%"/>
-![til](gif_llama2.gif)
+<img src="gif_llama2.gif" width="100%" height="100%"/>
 
 ## Overview
 This repository contains the code and resources to create a chatbot using Llama 2 as the Large Language Model, Pinecone as the Vector Store for efficient similarity search, and Streamlit for building the user interface.
