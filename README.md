@@ -1,10 +1,8 @@
 <img src="gif_llama2.gif" width="100%" height="100%"/>
 
-## Overview
-![Chatbot Scheme](chatbot-scheme.jpg)
-
 ## Table of Contents
 - [Introduction](#introduction)
+- [Overview](#overview)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -19,7 +17,10 @@ This project aims to showcase the integration of technologies to build an intell
 
 While building with Llama 2, this repository is intended to leverage its factual accuracy and consistency by providing it with reliable and up-to-date information from the knowledge base. Achieving this involves the model with an external database that could be used to store such novel information. 
 
-In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope. 
+In order to keep it as simple as it goes, this repository focuses solely on meeting the outlined objectives without delving into alternative technologies that would certainly complement the project but are outside its specific scope.
+
+## Overview
+![Chatbot Scheme](chatbot-scheme.jpg)
 
 ## Features
 - **LangChain**: A specialized framework designed for developping language model applications, providing seamless integration with the powerful Llama 2 model. The framework offers off-the-shelf chains for easy initiation as well as customizable components for tailoring existing chains or building new ones. The LangChain libraries themselves are made up of several different packages, with `langchain_community` serving as a hub for third party integrations. Within this package, `llama-cpp-python` is particularly relevant for the specific purpose of this repository. It acts as a Python binding for `llama.cpp` and supports inference for many Llama 2 models.
