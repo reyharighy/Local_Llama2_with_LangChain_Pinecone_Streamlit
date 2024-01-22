@@ -90,6 +90,17 @@ The prompt template for the first turn looks like this:
 
 ```text
 <s>[INST] <<SYS>>
+You are a helpful and honest assistant. Always answer as accurate as possible. Use context below as a knowledge base. If else, use your own knowledge.
+
+CONTEXT:
+{{ context }}
+<</SYS>>
+
+{{ user_message }} [/INST]
+```
+
+```text
+<s>[INST] <<SYS>>
 {{ system_prompt }}
 <</SYS>>
 
