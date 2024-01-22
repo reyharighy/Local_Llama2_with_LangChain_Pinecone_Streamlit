@@ -1,7 +1,7 @@
 <img src="gif_llama2.gif" width="100%" height="100%"/>
 
 ## Overview
-xxx --- input scheme
+![Chatbot Scheme](chatbot-scheme.jpg)
 
 ## Table of Contents
 - [Introduction](#introduction)
