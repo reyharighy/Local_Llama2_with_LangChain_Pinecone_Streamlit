@@ -96,16 +96,6 @@ The prompt template for the first turn looks like this:
 {{ user_message }} [/INST]
 ```
 
-```text
-<s>[INST] <<SYS>>
-{{ system_prompt }}
-CONTEXT:
-{{ context }}
-<</SYS>>
-
-{{ user_message_1 }} [/INST] {{ model_answer_1 }} </s><s>[INST] {{ user_message_2 }} [/INST]
-```
-
 This template follows the model's training procedure as described in [Llama 2 Paper](https://huggingface.co/papers/2307.09288). We can use any system prompt we want, but it's crucial that the format matches the one used during training. Simple usage of the Llama 2 model has been provided on [this notebook](simple_usage.ipynb).
 
 ```python
