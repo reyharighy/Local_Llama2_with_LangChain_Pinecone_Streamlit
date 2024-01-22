@@ -91,9 +91,6 @@ The prompt template for the first turn looks like this:
 ```text
 <s>[INST] <<SYS>>
 {{ system_prompt }}
-
-CONTEXT:
-{{ context }}
 <</SYS>>
 
 {{ user_message }} [/INST]
